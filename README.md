@@ -2,13 +2,13 @@
 
 Statistical correction pipeline for autocorrelation-induced false positives in LLM conversation analysis.
 
-**Paper:** Schessl, F. (2026). *The Autocorrelation Blind Spot: Why 43% of Turn-Level Findings in LLM Conversation Analysis May Be Spurious.* [arXiv:XXXX.XXXXX]
+**Paper:** Schessl, F. (2026). *The Autocorrelation Blind Spot: Why 42% of Turn-Level Findings in LLM Conversation Analysis May Be Spurious.* [arXiv:XXXX.XXXXX]
 
 ## The Problem
 
 Turn-level metrics in LLM conversations (e.g., semantic velocity, frame distance, lexical diversity) are highly autocorrelated: consecutive turns within a conversation are not independent observations. Standard statistical tests (point-biserial *r*, Spearman rho) ignore this dependency and produce inflated significance.
 
-In our study of 150 conversations (9,599 turn pairs, 4 LLM providers), **43% of nominally significant findings were spurious** after correcting for autocorrelation.
+In our study of 202 conversations (11,639 turn pairs, 4 LLM providers), **42% of nominally significant findings were spurious** after correcting for autocorrelation.
 
 ## Methods
 
@@ -120,7 +120,7 @@ pytest tests/ -v
 
 ```bibtex
 @article{schessl2026autocorrelation,
-  title={The Autocorrelation Blind Spot: Why 43\% of Turn-Level Findings
+  title={The Autocorrelation Blind Spot: Why 42\% of Turn-Level Findings
          in LLM Conversation Analysis May Be Spurious},
   author={Schessl, Ferdinand},
   journal={arXiv preprint arXiv:XXXX.XXXXX},

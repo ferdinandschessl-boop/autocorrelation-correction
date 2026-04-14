@@ -1,0 +1,21 @@
+code,category,label,r_obs,p_pooled,rho_bar,n_eff,p_final,status,notes
+V1,Embedding velocity,malicious,+0.077,6.5e-13,0.057,10394,6.5e-13,robust,representative
+V2,Embedding velocity (smoothed),malicious,+0.164,1.2e-70,0.70,2033,1.1e-13,robust,representative
+D1,Differential,malicious,-0.132,6.7e-43,0.20,3721,1.4e-10,robust,representative
+C1,Compression-based,malicious,+0.098,3.9e-26,0.105,9426,2.2e-21,robust,representative
+I1,Interaction term,malicious,+0.032,0.008,0.50,1317,0.072,weak,representative
+T1,Timestamp-based,malicious,+0.018,0.041,0.70,779,0.344,weak,representative
+AGG-EV,Embedding velocity,malicious,,,0.06,,,3_pooled_2_robust_IR33,aggregate_table3
+AGG-DIR,Directional,malicious,,,0.21,,,1_pooled_1_robust_IR0,aggregate_table3
+AGG-CMP,Compression (NCD),malicious,,,0.11,,,2_pooled_0_robust_IR100,aggregate_table3
+AGG-DIFF,Differential,malicious,,,0.20,,,3_pooled_3_robust_IR0,aggregate_table3
+AGG-THC,Thermo-cycle,malicious,,,0.35,,,4_pooled_2_robust_IR50,aggregate_table3
+AGG-FRD,Frame distance,malicious,,,0.45,,,3_pooled_2_robust_IR33,aggregate_table3
+AGG-LEX,Lexical/structural,malicious,,,0.50,,,9_pooled_6_robust_IR33,aggregate_table3
+AGG-ROL,Rolling windows,malicious,,,0.91,,,3_pooled_3_robust_IR0,aggregate_table3
+AGG-CUM,Cumulative,malicious,,,0.93,,,2_pooled_1_robust_IR50,aggregate_table3
+AGG-INT,Interaction,malicious,,,0.50,,,2_pooled_1_robust_IR50,aggregate_table3
+AGG-TIM,Timestamp/recovery,malicious,,,0.70,,,1_pooled_1_robust_IR0,aggregate_table3
+AGG-DER,Derived features,malicious,,,0.20,,,11_pooled_5_robust_IR54,aggregate_table3
+TOTAL-MAL,Total (malicious label),malicious,,,,,,44_pooled_27_robust_IR39,aggregate_table3
+TOTAL-ALL,Total (all three labels),all,,,,,,81_pooled_47_robust_IR42,aggregate_table3
